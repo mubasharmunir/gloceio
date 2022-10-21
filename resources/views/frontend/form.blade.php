@@ -28,7 +28,7 @@
                 <div class="mb-p3">
                   <label class="form-label" for="naem">Name</label>
                   <input class="form-control" name="name" type="text">
-                  @error('Name')
+                  @error('name')
                   <div class="alert alert-danger" role="alert">
                       {{$message}}
                   </div>
@@ -39,7 +39,7 @@
                   <label class="form-label" for="exampleInputEmail1">Email address</label>
                   <input class="form-control" name="email" type="email" aria-describedby="emailHelp">
                   <div class="form-text" id="emailHelp">We'll never share your email with anyone else.</div>
-                  @error('Email')
+                  @error('email')
                     <div class="alert alert-danger" role="alert">
                         {{$message}}
                     </div>
@@ -48,7 +48,7 @@
                 <div class="mb-p3">
                   <label class="form-label" for="phone">Phone</label>
                   <input class="form-control" name="phone" type="phone" >
-                  @error('Phone')
+                  @error('phone')
                     <div class="alert alert-danger" role="alert">
                         {{$message}}
                     </div>
@@ -57,8 +57,8 @@
 
                 <div class="mb-p3">
                   <label class="form-label" for="exampleInputPassword1">Password</label>
-                  <input class="form-control" name="password" type="password" required>
-                  @error('Password')
+                  <input class="form-control" name="password" type="password" >
+                  @error('password')
                     <div class="alert alert-danger" role="alert">
                         {{$message}}
                     </div>
