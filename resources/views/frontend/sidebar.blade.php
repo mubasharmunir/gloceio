@@ -15,18 +15,18 @@
           <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
             <use xlink:href="#real-estate-1"> </use>
           </svg>HOME</a></li>
-      <li class="sidebar-item"><a class="sidebar-link" href="{{ route('frontend.form') }}"> 
+      <li class="sidebar-item"><a class="sidebar-link" href="{{ route('user') }}"> 
           <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
             <use xlink:href="#survey-1"> </use>
-          </svg>Forms </a></li>
-      <li class="sidebar-item"><a class="sidebar-link" href="charts.php"> 
+          </svg>User </a></li>
+      <li class="sidebar-item"><a class="sidebar-link" href="{{ route('course') }}"> 
           <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
             <use xlink:href="#sales-up-1"> </use>
-          </svg>Charts </a></li>
+          </svg>Course </a></li>
       
-      <li class="sidebar-item"><a class="sidebar-link" href="tables.php"> 
+      <li class="sidebar-item"><a class="sidebar-link" href="{{ route('user_course') }}"> 
           <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
             <use xlink:href="#portfolio-grid-1"> </use>
-          </svg>Tables </a></li>
+          </svg>User_Courses </a></li>
     </ul>
   </nav>

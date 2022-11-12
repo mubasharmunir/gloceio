@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Form extends Model
 {
-    protected $table = 'forms';
+    protected $table = 'user';
 	public $timestamps = true;
     use HasFactory;
     protected $fillable = [
@@ -16,4 +16,12 @@ class Form extends Model
         'phone',
         'password',
     ];
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
+    public function course()
+    {
+        return $this->belongsToMany(courses::class, 'user_course ');
+    }
+
 }

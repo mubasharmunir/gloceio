@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('student', function (Blueprint $table) {
+        Schema::create('mobiles', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('deparment')->nullable();
-            $table->string('Acadmic_session')->nullable();
-
-            $table->timestamps();
+            $table->string('company')->nullable();
+            $table->timestamps(); 
+            // $table->unsignedBigInteger('customer_id');
+            // $table->foregin('customer_id')->references('id')->on('customers');
+            $table->foreignId('customer_id')->constrained('customers');
         });
     }
 
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('student');
+        Schema::dropIfExists('mobiles');
     }
 };
