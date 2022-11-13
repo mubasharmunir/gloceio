@@ -13,12 +13,19 @@ use Illuminate\Support\Facades\DB;
 class UserCourseController extends Controller
 {
      public function data_show(){
-        // $users=Course::with(['user'])->get();
+        $users=Course::with(['user'])->get();
 
-        $users = Course::all()->load('user');
+        // $users = Course::all()->load('user');
         dd($users );
 
 
         return view('frontend.usercourse_list' ,compact('users'));
+    }
+
+
+    public function getStudentCourses(){
+        $studentCourses = User::with(['subject'])->get();
+        dd($studentCourses );
+        // return view('frontend.usercourse_list' ,compact('users'));
     }
 }

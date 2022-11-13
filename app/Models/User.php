@@ -14,7 +14,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $table = 'users';
-	public $timestamps = true;
+	public $timestamps = false;
     public function course()
     {
         return $this->belongsToMany(Course::class, 'user_course ');

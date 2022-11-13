@@ -36,6 +36,7 @@ Route::get('/user_course',[CourseController::class,'UserCourse'])->name('user_co
 Route::post('/courses',[CourseController::class,'Save_course'])->name('post_course');
 Route::get('/product',[ProductController::class,'index']);
 Route::get('/data_show',[UserCourseController::class,"data_show"])->name('data_show');
+Route::get('/get_student_courses',[UserCourseController::class,"getStudentCourses"])->name('getStudentCourses');
 // Route::get('/product',[ProductController::class,'dispaly_store'])->name('products');
 
 Route::get('send-mail', function () { 
