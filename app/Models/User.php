@@ -17,7 +17,7 @@ class User extends Authenticatable
 	public $timestamps = false;
     public function course()
     {
-        return $this->belongsToMany(Course::class, 'user_course ');
+        return $this->belongsToMany(Course::class, 'user_course');
     }
     protected $fillable = [
         'name',
